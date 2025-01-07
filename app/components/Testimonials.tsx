@@ -18,7 +18,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="h-screen bg-white">
+    <div className=" bg-white">
       <div className="text-center py-10 items-center mx-auto">
         <h1 className="text-6xl font-bold text-blue-950">
           جربونا و دواو علينا
