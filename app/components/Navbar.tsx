@@ -2,7 +2,7 @@ import { Facebook02Icon, GlobalEditingIcon, InstagramIcon, Menu01Icon, NewTwitte
 import React, { useState, useRef, useEffect } from 'react';
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const menuRef = useRef(null);
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -31,14 +31,14 @@ function Navbar() {
                 <button className="hidden md:block bg-green-500 px-4 py-1 rounded font-bold">جربو أوكارز</button>
             </div>
 
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-6 gap-5">
                 <div className="hidden md:flex space-x-6 font-semibold">
                     <a href="#" className="hover:text-orange-400">نصائح</a>
                     <a href="#" className="hover:text-orange-400">أثمنة السيارات</a>
                     <a href="#" className="hover:text-orange-400">التسعير</a>
                     <a href="#" className="hover:text-orange-400">الصفحة الرئيسية</a>
                 </div>
-                <img src="/logo.png" alt="logo" className="px-10" />
+                <img src="/logo.png" alt="logo" className="left-10" />
                 <div className="md:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
                         <Menu01Icon size={20} />
