@@ -4,7 +4,7 @@ import React from 'react'
 function Hdro() {
     // change font
   return (
-    <div className='h-screen bg-white'>
+    <div className=' bg-white'>
         <div className='flex items-center justify-around'>
             <img src="press.png" alt="" />
             <div className='flex justify-center align-center items-center'>
