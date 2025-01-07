@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import JrboOcarz from "./JrboOcarz";
 
 interface Step {
   title: string;
@@ -102,11 +103,7 @@ const Steps: React.FC = () => {
           ></span>
         ))}
       </div>
-      <div className="flex justify-center py-10 sm:py-20">
-        <button className="bg-orange-400 font-bold text-white py-4 sm:py-5 px-16 sm:px-24 md:px-32 text-2xl sm:text-4xl">
-          جربو أوكارز
-        </button>
-      </div>
+      <JrboOcarz/>
     </div>
   );
 };
