@@ -1,18 +1,26 @@
-import { Download01Icon, DownloadCircle02Icon } from "hugeicons-react";
+import { DownloadCircle02Icon } from "hugeicons-react";
 import React from "react";
 import JrboOcarz from "./JrboOcarz";
 
 function Hdro() {
-  // change font
   return (
     <div className=" bg-white">
-      <div className="flex items-center justify-around">
-        <img src="press.png" alt="" />
-        <div className="flex justify-center align-center items-center">
-          <h1 className="text-3xl font-bold text-orange-500">هضرو علينا</h1>
-          <DownloadCircle02Icon size={50} color="white" fill="orange" />
+      <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col md:flex-row items-center justify-around gap-8">
+        <img 
+          src="press.png" 
+          alt="Press coverage" 
+          className="w-full md:w-auto max-w-xl h-auto"
+        />
+        <div className="flex items-center gap-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-orange-500">هضرو علينا</h1>
+          <DownloadCircle02Icon
+            size={40} 
+            className="text-white fill-orange-500"
+          />
         </div>
       </div>
+    </div>
       <div className="flex items-center justify-center flex-col py-7">
         <div className="space-y-5">
           <img

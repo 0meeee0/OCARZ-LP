@@ -49,7 +49,7 @@ function Navbar() {
             {isOpen && (
                 <div 
                     ref={menuRef} 
-                    className="absolute top-0 left-0 w-full bg-[rgba(9,27,87,255)] text-white flex flex-col items-center space-y-4 py-6 md:hidden"
+                    className="absolute top-0 z-10 left-0 w-full bg-[rgba(9,27,87,255)] text-white flex flex-col items-center space-y-4 py-6 md:hidden"
                 >
                     <div className="flex space-x-3">
                         <a href="#" className="hover:text-gray-400"><Facebook02Icon size={20} /></a>
