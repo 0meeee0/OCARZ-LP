@@ -7,6 +7,7 @@ import Steps from "./components/sections/Steps";
 import Testimonials from "./components/sections/Testimonials";
 import NumberOfCars from "./components/sections/NumberOfCars";
 import Trending from "./components/sections/Trending";
+import Footer from "./components/layouts/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials />
       <NumberOfCars />
       <Trending />
+      <Footer/>
     </>
   );
 }
