@@ -2,7 +2,7 @@ import React from "react";
 
 function Options() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 pb-10">
+    <div id="car" className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 pb-10">
       <div className="w-full md:w-96 opacity-50 transition-all">
         <div className="text-xl text-center py-5">
           <img className="mx-auto w-auto h-auto" src="carsL.png" alt="" />

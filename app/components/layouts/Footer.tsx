@@ -1,4 +1,11 @@
-import { Facebook01Icon, InstagramIcon, YoutubeIcon } from "hugeicons-react";
+import scrollToSection from "@/app/helpers/smoothScrolling";
+import {
+  ArrowUp01Icon,
+  ArrowUp02Icon,
+  Facebook01Icon,
+  InstagramIcon,
+  YoutubeIcon,
+} from "hugeicons-react";
 import React from "react";
 
 function Footer() {
@@ -64,6 +71,18 @@ function Footer() {
             <InstagramIcon className="text-white text-2xl" />
           </div>
         </div>
+      </div>
+      <div className="relative flex justify-center items-center">
+        <a
+          onClick={() => scrollToSection("nav")}
+          className="relative w-10 h-10 bg-orange-400 rounded-full flex justify-center items-center cursor-pointer z-10"
+        >
+          <ArrowUp02Icon color="white" />
+        </a>
+        <div className="absolute left-0 right-0 h-[0.2px] bg-orange-400" />
+      </div>
+      <div className="text-center pt-2 text-white">
+        <p className="font-bold">2025 © جميع الحقوق محفوظة | تصميم وتطوير بواسطة فريق واحة</p>
       </div>
     </footer>
   );

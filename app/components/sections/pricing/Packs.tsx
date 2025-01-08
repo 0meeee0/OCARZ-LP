@@ -2,7 +2,7 @@ import React from "react";
 
 function Packs() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 pb-10">
+    <div id="pricing" className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 pb-10">
       <div className="w-full md:w-96 bg-white shadow-lg">
         <div className="bg-[#E4E4E4] text-slate-500 text-lg md:text-xl text-center py-5">
           Pack #1

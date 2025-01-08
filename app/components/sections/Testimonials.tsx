@@ -18,7 +18,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="bg-white">
+    <div id="testimonials" className="bg-white">
       <div className="text-center py-6 md:py-10 px-4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-950">
           جربونا و دواو علينا
