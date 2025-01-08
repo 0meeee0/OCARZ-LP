@@ -6,6 +6,7 @@ import Hdro from "./components/Hdro";
 import Steps from "./components/Steps";
 import Testimonials from "./components/Testimonials";
 import NumberOfCars from "./components/NumberOfCars";
+import Trending from "./components/Trending";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Steps/>
       <Testimonials/>
       <NumberOfCars/>
+      <Trending/>
     </>
   );
 }
