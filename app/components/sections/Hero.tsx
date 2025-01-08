@@ -1,3 +1,4 @@
+import { PlaneIcon, PlayCircle02Icon } from "hugeicons-react";
 import React from "react";
 
 function Hero() {
@@ -10,6 +11,11 @@ function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gray-800/50"></div>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <button className="bg-black/30 hover:bg-black/50 border border-white p-3 px-4 rounded-full shadow-md text-white text-2xl cursor-pointer">
+            &#9658;
+          </button>
+        </div>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-end">
