@@ -8,7 +8,7 @@ import Testimonials from "./components/sections/Testimonials";
 import NumberOfCars from "./components/sections/NumberOfCars";
 import Trending from "./components/sections/Trending";
 import Footer from "./components/layouts/Footer";
-import Pricing from "./components/sections/Pricing";
+import Pricing from "./components/sections/pricing/Pricing";
 
 export default function Home() {
   return (
@@ -17,11 +17,11 @@ export default function Home() {
       <Hero />
       <Hdro />
       <Steps />
-      <Pricing/>
+      <Pricing />
       <Testimonials />
       <NumberOfCars />
       <Trending />
-      <Footer/>
+      <Footer />
     </>
   );
 }
