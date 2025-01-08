@@ -1,6 +1,6 @@
-import { ArrowLeft02Icon, ArrowRight02Icon } from 'hugeicons-react';
-import React, { useState } from 'react';
-import JrboOcarz from './JrboOcarz';
+import { ArrowLeft02Icon, ArrowRight02Icon } from "hugeicons-react";
+import React, { useState } from "react";
+import JrboOcarz from "./JrboOcarz";
 
 interface Article {
   id: number;
@@ -15,50 +15,54 @@ const Trending: React.FC = () => {
   const articles: Article[] = [
     {
       id: 1,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
     },
     {
       id: 2,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
     },
     {
       id: 3,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
     },
     {
       id: 4,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
     },
     {
       id: 5,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
     },
     {
       id: 6,
-      image: "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
+      image:
+        "https://csnb.ca/sites/default/files/styles/article/public/default_images/news-default-image%402x_0.png?itok=B4jML1jF",
       date: "01-02-2022",
       title: "عنوان",
-    }
+    },
   ];
 
   const nextSlide = (): void => {
-    setCurrentSlide((prev) => 
-      prev + 3 >= articles.length ? 0 : prev + 3
-    );
+    setCurrentSlide((prev) => (prev + 3 >= articles.length ? 0 : prev + 3));
   };
 
   const prevSlide = (): void => {
-    setCurrentSlide((prev) => 
+    setCurrentSlide((prev) =>
       prev - 3 < 0 ? Math.max(0, articles.length - 3) : prev - 3
     );
   };
@@ -73,30 +77,27 @@ const Trending: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="relative">
-          <button 
+          <button
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 text-orange-400 "
           >
-            <ArrowLeft02Icon/>
+            <ArrowLeft02Icon />
           </button>
-          
-          <button 
+
+          <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10  p-2 text-orange-400"
           >
-            <ArrowRight02Icon/>
+            <ArrowRight02Icon />
           </button>
 
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(${currentSlide * -33.33}%)` }}
             >
               {articles.map((article) => (
-                <div 
-                  key={article.id}
-                  className="w-1/3 flex-shrink-0 px-4"
-                >
+                <div key={article.id} className="w-1/3 flex-shrink-0 px-4">
                   <div className="flex flex-col">
                     <div>
                       <img
@@ -118,7 +119,7 @@ const Trending: React.FC = () => {
             </div>
           </div>
 
-          <JrboOcarz/>
+          <JrboOcarz />
         </div>
       </div>
     </div>

@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Hdro from "./components/Hdro";
-import Steps from "./components/Steps";
-import Testimonials from "./components/Testimonials";
-import NumberOfCars from "./components/NumberOfCars";
-import Trending from "./components/Trending";
+import Navbar from "./components/layouts/Navbar";
+import Hero from "./components/sections/Hero";
+import Hdro from "./components/sections/Hdro";
+import Steps from "./components/sections/Steps";
+import Testimonials from "./components/sections/Testimonials";
+import NumberOfCars from "./components/sections/NumberOfCars";
+import Trending from "./components/sections/Trending";
 
 export default function Home() {
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Hdro/>
-      <Steps/>
-      <Testimonials/>
-      <NumberOfCars/>
-      <Trending/>
+      <Navbar />
+      <Hero />
+      <Hdro />
+      <Steps />
+      <Testimonials />
+      <NumberOfCars />
+      <Trending />
     </>
   );
 }

@@ -103,7 +103,7 @@ const Steps: React.FC = () => {
           ></span>
         ))}
       </div>
-      <JrboOcarz/>
+      <JrboOcarz />
     </div>
   );
 };
